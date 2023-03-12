@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Calculator</h1>
+    </div>
+    <div class="display">
+      <input class="dis" type="text" />
+    </div>
+    <div class="btn">
+      <div class="num1">
+        <button onclick="myfun('1')">1</button>
+        <button onclick="myfun('2')">2</button>
+        <button onclick="myfun('3')">3</button>
+        <button onclick="myfun('+')">+</button>
+      </div>
+      <div class="num2">
+        <button onclick="myfun('4')">4</button>
+        <button onclick="myfun('5')">5</button>
+        <button onclick="myfun('6')">6</button>
+        <button onclick="myfun('-')">-</button>
+      </div>
+
+      <div class="num3">
+        <button onclick="myfun('7')">7</button>
+        <button onclick="myfun('8')">8</button>
+        <button onclick="myfun('9')">9</button>
+        <button onclick="myfun('*')">*</button>
+      </div>
+      <div class="num4">
+        <button onclick="myfun('0')">0</button>
+        <button onclick="result()">=</button>
+        <button onclick="ac()">Ac</button>
+        <button onclick="myfun('/')">/</button>
+      </div>
+
+      <div id="show"></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
